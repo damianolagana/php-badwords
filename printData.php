@@ -13,7 +13,17 @@ $testo = $_GET["paragrafo"];
 
     <h1>Paragrafo</h1>
     <div>
-        <?php echo $testo; ?>
+        <h3>
+            <?php echo $testo; ?>
+
+        </h3>
+    </div>
+    <div>
+        La lunghezza del testo che hai scritto è :
+        <?php
+            $lunghezza = strlen($testo);
+            echo $lunghezza . " caratteri"
+        ?>
     </div>
 </body>
 </html>
