@@ -17,7 +17,7 @@ $censuredWord = $_GET["parolaCensurata"]
         <h3>
             <?php 
             $badWord = str_replace($censuredWord,"***",$testo);
-            echo $testo; ?>
+            echo $badWord; ?>
 
         </h3>
     </div>
