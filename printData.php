@@ -9,12 +9,15 @@
 <body>
 <?php
 $testo = $_GET["paragrafo"];
+$censuredWord = $_GET["parolaCensurata"]
 ?>
 
     <h1>Paragrafo</h1>
     <div>
         <h3>
-            <?php echo $testo; ?>
+            <?php 
+            $badWord = str_replace($censuredWord,"***",$testo);
+            echo $testo; ?>
 
         </h3>
     </div>
